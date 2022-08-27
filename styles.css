@@ -7,6 +7,9 @@ body{
 }
 .wrapper{
     padding:0 6rem;
+    width:100vw;
+    height:100vh;
+    overflow: hidden;
 }
 .navbar{
     display: flex;
@@ -14,7 +17,7 @@ body{
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgba(0,0,0,0.1);
-    height: 8rem;
+    height: 6rem;
     
 }
 .navbar ul{
@@ -24,7 +27,7 @@ body{
     display:flex;
     align-items: center;
     padding: 2.5rem 1.5rem;
-    height:8rem;
+    height:6rem;
     float:left;
     color:rgb(142, 142, 142);
 }
@@ -56,6 +59,40 @@ display: none;
     border: 3px solid orange;
     border-radius:50%;
     cursor: pointer;
+}
+.galleryAndInfo{
+    display:flex;
+    flex-direction: row;
+    height:90%;
+}
+.productGallery{
+    display:flex;
+    flex-direction: column;
+    width:50%;
+    align-items: center;
+    padding: 3rem 4rem;
+}
+.active{
+    width:80%;
+}
+.active img{
+    width:100%;
+    border-radius: 1rem;
+}
+.nonActive{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:80%;
+    margin-top: 1.5rem;
+}
+.nonActive img{
+    height:6rem;
+    border-radius: 0.5rem;
+}
+.productInfo{
+    width:50%;
+    padding: 3rem 4rem;
 }
 @media screen and (max-width: 960px) {
 .wrapper{
@@ -95,6 +132,11 @@ display: none;
     flex-direction: row;
     gap:1.5rem;
 }
+.galleryAndInfo{
+    display:flex;
+    flex-direction: column;
+    height:95%;
+}
 .productGallery{
     width:100%;
     height:40%;
@@ -102,10 +144,17 @@ display: none;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    padding:0;
 }
 .productGallery img{
     height: 100%;
     width:100%;
+}
+.active{
+    width: 100%;
+}
+.nonActive{
+    display:none;
 }
 .productInfo{
     margin-top:1rem;
@@ -114,6 +163,7 @@ display: none;
     flex-direction: column;
     justify-content: space-between;
     height:45%;
+    width:100%;
 }
 .productInfo h4{
     color:hsl(26, 100%, 55%);
