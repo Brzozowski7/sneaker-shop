@@ -26,7 +26,7 @@ body{
 .navbar li{
     display:flex;
     align-items: center;
-    padding: 2.5rem 1.5rem;
+    padding: 2.5rem 1.3rem;
     height:6rem;
     float:left;
     color:rgb(142, 142, 142);
@@ -70,13 +70,15 @@ display: none;
     flex-direction: column;
     width:50%;
     align-items: center;
+    justify-content: space-around;
     padding: 3rem 4rem;
 }
 .active{
     width:80%;
 }
 .active img{
-    width:100%;
+    width: 100%;
+    height: auto;
     border-radius: 1rem;
 }
 .nonActive{
@@ -105,10 +107,9 @@ display: none;
 }
 .prices{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     width:100%;
     justify-content: space-between;
-    align-items: center;
 }
 .present{
     font-size: 1.5rem;
