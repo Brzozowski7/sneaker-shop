@@ -6,8 +6,63 @@ body{
     font-family: 'Kumbh Sans', sans-serif;
 }
 .wrapper{
+    padding:0 6rem;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    height: 8rem;
+    
+}
+.navbar ul{
+    list-style-type: none;
+}
+.navbar li{
+    display:flex;
+    align-items: center;
+    padding: 2.5rem 1.5rem;
+    height:8rem;
+    float:left;
+    color:rgb(142, 142, 142);
+}
+.navbar li:hover{
+    cursor:pointer;
+    color:black;
+    border-bottom: 3px orange solid;
+    transition: all 0.2s ease-out;
+}
+.titleAndMenu{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.titleAndMenu img{
+display: none;
+}
+.cartAndAvatar{
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: space-between;
+    gap:3rem;
+}
+#avatar{
+    height:3rem;
+}
+#avatar:hover{
+    border: 3px solid orange;
+    border-radius:50%;
+    cursor: pointer;
+}
+@media screen and (max-width: 960px) {
+.wrapper{
     width:100vw;
     height:100vh;
+    overflow: hidden;
+    padding:0;
 }
 .navbar{
     display:flex;
@@ -18,6 +73,9 @@ body{
     font-size: 1.3rem;
     align-items: center;
     justify-content: space-between;
+}
+.navbar ul{
+    display:none
 }
 .navbar img{
     height:1.7rem;
@@ -109,4 +167,4 @@ body{
 .productInfo img{
     color:white;
     vertical-align: middle;
-}
+}}
