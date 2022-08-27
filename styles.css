@@ -60,6 +60,9 @@ body{
 .productInfo h4{
     color:hsl(26, 100%, 55%);
 }
+.description {
+    color:darkgray;
+}
 .prices{
     display:flex;
     flex-direction: row;
